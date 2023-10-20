@@ -1,0 +1,140 @@
+.section {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.image-container {
+    flex: 1;
+    margin-right: 20px;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.text-container {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+.image-container {
+    width: 700px;
+    height: 520px;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 40px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.rounded-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.navbar-logo {
+    max-width: 180px; 
+    margin-right: 10px; 
+    margin-left: auto; 
+    padding-left: 45%;
+}
+
+
+.navbar-nav {
+    display: flex;
+    align-items: center; 
+    list-style: none;
+    padding: 0;
+    flex-grow: 1;
+    padding-left: 42%;
+
+}
+
+.btn-dark,
+.btn-custom {
+    background-color: #ffcd00;
+    color: #0a0a49;
+    padding: 8px 22px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 10px; 
+}
+
+.btn-dark:hover,
+.btn-custom:hover {
+    background-color: #dab41d;
+}
+
+
+.loginarea {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+    text-align: center;
+}
+
+
+.loginarea form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    text-align: center;
+}
+
+
+.text-gray {
+    color: #888;
+}
+
+p {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: bold; 
+}
+
+
+.dark-mode {
+    background-color: #333; 
+    color: #fff; 
+  }
+
+#darkModeButton {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  #darkModeButton:hover {
+    background-color: #555;
+    color: #fff;
+  }
+  
+
+  
