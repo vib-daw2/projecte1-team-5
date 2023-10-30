@@ -3,7 +3,8 @@
 @section('content')
 <div class="container">
 <div class="card">
-        <div class="card-header">{{ __('Enviar Paquete') }}</div>
+<link rel="icon" type="image/x-icon" href="../img/favicon.png">
+        <div class="card-header">{{ __('Actualizar Paquete') }}</div>
         <div class="card-body">
 
         
