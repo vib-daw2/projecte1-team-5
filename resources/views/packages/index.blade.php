@@ -46,7 +46,7 @@
                     </a>
                 </div>
 
-                <!-- Segundo carrusel (para el almacén 2) -->
+                <!-- Segundo carrusel -->
                 <h3>Sustancias toxicas</h3>
                 <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
@@ -73,7 +73,7 @@
                     </a>
                 </div>
 
-                <!-- Tercer carrusel (para el almacén 3) -->
+                <!-- Tercer carrusel -->
                 <h3>Electronica</h3>
                 <div id="carouselExampleControls3" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
