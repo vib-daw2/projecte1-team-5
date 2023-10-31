@@ -31,10 +31,9 @@ class SellController extends Controller
      */
     public function create()
     {
-        $users = User::all(); // Obtiene todos los usuarios disponibles
-        $packages = Package::all(); // Obtiene todos los paquetes disponibles
-        $trucks = Truck::all(); // Obtiene todos los camiones disponibles
-
+        $users = User::all();
+        $packages = Package::all(); 
+        $trucks = Truck::all(); 
         return view("sells.create", compact('users', 'packages', 'trucks'));
     }
 
@@ -46,15 +45,12 @@ class SellController extends Controller
         $request->validate([
             'package_id' => 'required',
             'truck_id' => 'required',
-            // Otros campos que necesites validar
         ]);
 
-        // Asignar el ID de usuario actual (Auth::id()) al campo user_id
         $sell = new Sell([
-            'user_id' => Auth::id(), // Esto asigna el ID del usuario actual
+            'user_id' => Auth::id(), 
             'package_id' => $request->package_id,
             'truck_id' => $request->truck_id,
-            // Otros campos que necesites asignar
         ]);
 
         $sell->save();
@@ -108,18 +104,11 @@ class SellController extends Controller
 
         $package->warehouse_id = $request->new_warehouse;
 
-
-        // Obtén el nombre del almacén actual
-        //$currentWarehouse = $package->warehouse->name;
-
-        // Determina el nuevo almacén en función del almacén seleccionado
         $newWarehouseId = $request->input('new_warehouse');
         $newWarehouse = Warehouse::find($newWarehouseId);
 
-        // Supongamos que el camión es igual al almacén en este caso
-        $newTruckId = $newWarehouse->id; // O $newWarehouse->name, dependiendo de cómo estén definidos
+        $newTruckId = $newWarehouse->id; 
 
-        // Ahora, asocia el nuevo camión a la venta
         $sell->truck_id = $request->new_truck;
 
         $package->save();
@@ -133,7 +122,6 @@ class SellController extends Controller
      */
     public function destroy($id)
     {
-        //  Obtenim la venta que volem esborrar
         $sell = Sell::findOrFail($id);
 
         try {
